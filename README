@@ -1,0 +1,18 @@
+A slugifier that converts utf-8 latin characters to their ascii counterpart.
+All non-recognized characters are removed, only lowercase alfanumerical characters
+and dashes are left. Also has an option to strip away starting, ending and double dashes.
+
+Conversion is based on http://en.wikipedia.org/wiki/Latin_characters_in_Unicode
+
+To use, just install it
+
+  gem install slugify
+
+require it
+
+  require 'slugify'
+
+and use it
+
+  "test test".slugify
+
