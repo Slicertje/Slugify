@@ -1,13 +1,10 @@
-# We need utf-8 support
+# encoding: utf-8
 if RUBY_VERSION < '1.9'
   $KCODE='u'
-else
-  Encoding.default_external = Encoding::UTF_8
-  Encoding.default_internal = Encoding::UTF_8
 end
 
 # Loading string extensions
-require 'slugify_string'
+require File.dirname(__FILE__) + '/slugify_string'
 
 class Slugify
     

@@ -1,5 +1,6 @@
+# Encoding: utf-8
 require 'test/unit'
-require File.dirname(__FILE__) + "/../lib/slugify_string"
+require File.dirname(__FILE__) + "/../lib/slugify"
 
 class StringSlugifyTest < Test::Unit::TestCase
 
