@@ -15,12 +15,12 @@ gem install slugify
 
 require it
 
-```
+```ruby
 require 'slugify'
 ```
 
 and use it
 
-```
+```ruby
 "test test".slugify
 ```
