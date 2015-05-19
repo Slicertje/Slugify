@@ -1,7 +1,7 @@
 # Slugify
 
 A slugifier that converts utf-8 latin characters to their ascii counterpart.
-All non-recognized characters are removed, only lowercase alfanumerical
+All non-recognized characters are removed, only lowercase alphanumerical
 characters and dashes are left. Also has an option to strip away starting,
 ending and double dashes.
 
