@@ -7,5 +7,5 @@ Gem::Specification.new do |spec|
     spec.files = Dir.glob("lib/*.rb") + Dir.glob("tests/*.rb") + %w(README)
     spec.test_files = Dir.glob("tests/*.rb")
 
-    spec.version = '1.0.6'
+    spec.version = '1.0.7'
 end
