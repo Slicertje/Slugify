@@ -93,6 +93,8 @@ class SlugifyTest < Test::Unit::TestCase
         assert_equal 'abcdefghijklmno', Slugify.convert('｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏ')
         assert_equal 'pqrstuvwxyz-', Slugify.convert('ｐｑｒｓｔｕｖｗｘｙｚ｛｜｝～')
 
+        assert_equal 'abvgdklmnzh', Slugify.convert('АБВГДклмнж')
+
         assert_equal 'abcdefghijklmnopqrstuvwxyz', Slugify.convert('abcdefghijklmnopqrstuvwxyz')
         assert_equal 'abcdefghijklmnopqrstuvwxyz', Slugify.convert('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
         assert_equal '0123456789', Slugify.convert('0123456789')
