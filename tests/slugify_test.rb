@@ -23,7 +23,7 @@ class SlugifyTest < Test::Unit::TestCase
         assert_equal '-', Slugify.convert('}')
         assert_equal '-', Slugify.convert('~')
         assert_equal 'aaaaaaaeceeeeiiii', Slugify.convert('ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ')
-        assert_equal 'dnoooooxouuuuythb', Slugify.convert('ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß')
+        assert_equal 'dnoooooxouuuuythss', Slugify.convert('ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß')
         assert_equal 'aaaaaaaeceeeeiiii', Slugify.convert('àáâãäåæçèéêëìíîï')
         assert_equal 'onoooooouuuuythy', Slugify.convert('ðñòóôõö÷øùúûüýþÿ')
         assert_equal 'aaaaaaccccccccdd', Slugify.convert('ĀāĂăĄąĆćĈĉĊċČčĎď')
