@@ -4,6 +4,7 @@ Gem::Specification.new do |spec|
   spec.description = 'Adds a method slugify to the string class that converts the string to a slug'
   spec.summary     = 'Adds String#slugify method'
   spec.homepage    = 'https://github.com/Slicertje/Slugify'
+  spec.license     = 'MIT'
 
   spec.files      = Dir.glob("lib/*.rb") + Dir.glob("tests/*.rb") + %w(README)
   spec.test_files = Dir.glob("tests/*.rb")
